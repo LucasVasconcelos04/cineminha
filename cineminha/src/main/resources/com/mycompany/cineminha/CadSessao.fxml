@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="998.0" style="-fx-background-color: #0A0A2A;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.view.CadSessaoController">
+   <children>
+      <Label layoutX="285.0" layoutY="52.0" prefHeight="51.0" prefWidth="356.0" text="CADASTRO DE SESSÃO" textFill="#c5c7b9">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_excluir" layoutX="526.0" layoutY="565.0" mnemonicParsing="false" onAction="#btn_excluir_Click" prefHeight="32.0" prefWidth="126.0" style="-fx-background-color: #c5c7b9;" text="EXCLUIR" textFill="#030303">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_edit" layoutX="308.0" layoutY="565.0" mnemonicParsing="false" onAction="#btn_edit_Click" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: #c5c7b9;" text="EDITAR" textFill="#030303">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_save" layoutX="94.0" layoutY="565.0" mnemonicParsing="false" onAction="#btn_salvar_Click" prefHeight="32.0" prefWidth="126.0" style="-fx-background-color: #c5c7b9;" text="SALVAR" textFill="#030303">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <BorderPane layoutX="997.0" prefHeight="634.0" prefWidth="11.0" style="-fx-background-color: #c5c7b9;" />
+      <BorderPane layoutX="-8.0" layoutY="628.0" prefHeight="13.0" prefWidth="1016.0" style="-fx-background-color: #c5c7b9;" />
+      <BorderPane layoutY="-2.0" prefHeight="643.0" prefWidth="11.0" style="-fx-background-color: #c5c7b9;" />
+      <BorderPane layoutX="10.0" layoutY="-6.0" prefHeight="19.0" prefWidth="998.0" style="-fx-background-color: #c5c7b9;" />
+      <Label layoutX="65.0" layoutY="126.0" prefHeight="21.0" prefWidth="58.0" text="FILMES" textFill="#c5c7b9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="202.0" prefHeight="21.0" prefWidth="97.0" text="HORA INÍCIO" textFill="#c5c7b9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_hr_inicio" layoutX="66.0" layoutY="228.0" prefHeight="32.0" prefWidth="116.0" style="-fx-background-color: #c5c7b9;" />
+      <Label layoutX="65.0" layoutY="279.0" prefHeight="21.0" prefWidth="84.0" text="HORA FIM" textFill="#c5c7b9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_hr_fim" layoutX="65.0" layoutY="305.0" prefHeight="32.0" prefWidth="116.0" style="-fx-background-color: #c5c7b9;" />
+      <TableView fx:id="tbv_cad_sessao" layoutX="390.0" layoutY="150.0" prefHeight="344.0" prefWidth="556.0" style="-fx-background-color: #DCDCDC;">
+         <columns>
+            <TableColumn fx:id="clm_id" prefWidth="46.0" text="ID" />
+            <TableColumn fx:id="clm_sala" prefWidth="102.0" text="SALA" />
+            <TableColumn fx:id="clm_id_filme" prefWidth="63.0" text="ID FILME" />
+            <TableColumn fx:id="clm_hr_inicio" prefWidth="119.0" text="HORÁRIO INÍCIO" />
+            <TableColumn fx:id="clm_hr_fim" prefWidth="127.0" text="HORÁRIO FIM" />
+            <TableColumn fx:id="clm_lotacao" prefWidth="97.0" text="LOTAÇÃO MÁX." />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="cmb_filme" layoutX="65.0" layoutY="150.0" prefHeight="32.0" prefWidth="235.0" style="-fx-background-color: #c5c7b9;" />
+      <Label layoutX="65.0" layoutY="356.0" prefHeight="21.0" prefWidth="58.0" text="SALAS" textFill="#c5c7b9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmb_sala" layoutX="65.0" layoutY="380.0" prefHeight="32.0" prefWidth="180.0" style="-fx-background-color: #c5c7b9;" />
+      <Label layoutX="66.0" layoutY="429.0" prefHeight="21.0" prefWidth="116.0" text="LOTAÇÃO MÁX" textFill="#c5c7b9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_lotacao" layoutX="66.0" layoutY="455.0" prefHeight="32.0" prefWidth="67.0" style="-fx-background-color: #c5c7b9;" />
+   </children>
+</AnchorPane>
